@@ -1,5 +1,5 @@
 const container = document.querySelector('.app-table__body-content');
-const emptyDot = document.querySelector('.app-table__body-dot_empty');
+const emptyDot = document.querySelector('._empty');
 
 for (let i = 0; i < 4680 - 4; i++) {
   const copy = emptyDot.cloneNode();
