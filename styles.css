@@ -210,6 +210,44 @@ html {
   background-color: var(--orange);
 }
 
+.app-table__body-dot {
+  animation-name: paint;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-play-state: paused;
+}
+
+@keyframes paint {
+  0% {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+  }
+
+  70% {
+    background-color: white;
+    border: 1px solid #FFFFFF;
+  }
+
+  80% {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+  } 
+
+  90% {
+    background-color: white;
+    border: 1px solid #FFFFFF;
+  }
+
+  100% {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+  }  
+}
+
+.animated {
+  animation-play-state: running;
+}
+
 /* Продолжительность */
 
 .app-table__body-comment {
@@ -366,6 +404,8 @@ html {
   font-size: 1.5rem;
   font-weight: 700;
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
   color: #FFFFFF;
   background: linear-gradient(241.45deg, #F67B05 10.13%, #FDA303 88.99%);
   cursor: pointer;
